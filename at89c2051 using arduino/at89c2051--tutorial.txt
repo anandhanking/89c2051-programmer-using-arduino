@@ -1,0 +1,57 @@
+SOFTWARES:
+
+* install sdcc c compiler from website.
+* install programmers notepad.
+* install at89c2051 programmer software created by ceptimus.
+
+ARDUINO CODE UPLOADING:
+
+* upload at89c2051programmer.ino to arduino mega.
+
+SETTING THE SDCC:
+* create folder for the output files.==>(ex.)==>D:\hello
+
+* open programmers notepad.
+* go to tools>options
+* click on the Tools>
+	
+	* click==> "Add".
+	* click "Name" and give name as per the folder you created before.(ex.)==>hello
+	* click the 3 dots on the command field
+		* paste this in the path line==> C:\Program Files\SDCC\bin\sdcc.exe 
+	* click the 3 dots on the folder field 
+		* select the folder previously created.
+	* type the following in the parameters field==> %d%f
+	* click "ok".
+
+CREATING FILES:
+
+* click "New" in the "File" menu. 
+* click "save as" and select the folder previously created
+  and give a file name same as the folder with extension of ".c" in the ending.
+
+GENERATING HEX FILE:
+ 
+* type the code in the window. 
+* click save. (IMPORTANT)
+
+* click "Tools" and click the name of your folder.
+* check for the errors in the bottom window.
+	* if the process EXIT code is "1" check the program because it have errors.
+	* if the process EXIT code is "0" then the program is "OK". 
+
+EDITING HEX FILE NAME:
+
+* the default hex file created by the sdcc will be in the ".ihx" format.
+* we need to rename it as ".hex".
+
+-----------------------------------------------------------------------------------------------------------------
+
+**** for using sdcc from COMMAND LINE:
+
+	* open the "cmd".
+	* type the following==> "C:\Program Files\SDCC\bin\sdcc.exe" D:\sdcc_all\blink\blink\blink.c
+		* right side is your ".c" file path.
+
+-----------------------------------------------------------------------------------------------------------------
+s
